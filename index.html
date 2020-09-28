@@ -13,13 +13,13 @@
     <title>Document</title>
     
 </head>
-<body>
+<body class="bg-dark">
     <div class="wrapper">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <a class="navbar-brand" href="index.html">UFO Sightings</a>
         </nav>
         <div class="jumbotron">
-            <h1>The Truth Is Out There</h1>
+            <h1 class="display-4">The Truth Is Out There</h1>
         </div>
         <div class="container-fluid">
             <div class="row">
@@ -36,15 +36,29 @@
         <div class="container-fluid">
             <div class="row">
               <div class="col-md-3">
-                <form>
+                <form class="bg-dark">
                     <p>Filter Search</p>
-                    <ul class="list-group">
-                        <li class="list-group-item">
+                    <ul class="list-group bg-dark">
+                        <li class="list-group-item bg-dark">
                             <label for="date">Enter Date</label>
-                            <input type="text" placeholder="1/10e/2010" id="datetime" />
+                            <input type="text" placeholder="1/10/2010" id="datetime" />
                         </li>
-                        <li class="list-group-item">
-                            <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                        <li>
+                            <label for="city">Enter a City</label>
+                            <input type="text" id="city" class="form-control" placeholder="roswell" />
+                        </li>
+                        <li>
+                            <label for="state">Enter a State</label>
+                            <input type="text" id="state" class="form-control" placeholder="ca">
+
+                        </li>
+                        <li>
+                            <label for="country">Enter a Country</label>
+                            <input type="text" id="country" class="form-control" placeholder="us">
+                        </li>
+                        <li>
+                            <label for="shape">Enter a Shape</label>
+                            <input type="text" id="shape" class="form-control" placeholder="circle">
                         </li>
                     </ul>
                     
@@ -71,5 +85,8 @@
         </div>
     
     </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/app.js"></script>
 </body>
 </html>
